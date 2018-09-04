@@ -37,21 +37,19 @@ public class CharacterMainTest {
 	@Test
 	public void testSequence1() throws Exception{
 		runTest('E',"CharacterMain","sequence1");
-		String result1 = byteArrayOutputStream.toString();
+		String result1 = byteArrayOutputStream.toString().replaceAll("\r", "");
 		byteArrayOutputStream = new ByteArrayOutputStream();
 		runTest('e',"CharacterMain","sequence1");
-		String result2 = byteArrayOutputStream.toString();
+		String result2 = byteArrayOutputStream.toString().replaceAll("\r", "");
 		byteArrayOutputStream = new ByteArrayOutputStream();
 		runTest('4',"CharacterMain","sequence1");
-		String result3 = byteArrayOutputStream.toString();
+		String result3 = byteArrayOutputStream.toString().replaceAll("\r", "");
 		byteArrayOutputStream = new ByteArrayOutputStream();
 		runTest('a',"CharacterMain","sequence1");
-		String result4 = byteArrayOutputStream.toString();
+		String result4 = byteArrayOutputStream.toString().replaceAll("\r", "");
 		
 		assertFalse("Remember to output the first sequence results into the console.",notExpected.equals(result1));
-		System.out.println(result1);
-		System.out.println(expected1a);
-
+		
 		assertTrue("Your first sequence did not passed the test with 'E'. Please review it.",expected1a.equals(result1));
 		
 		assertTrue("Your first sequence did not passed the test with 'e'. Please review it.",expected1b.equals(result2));
@@ -63,16 +61,16 @@ public class CharacterMainTest {
 	@Test
 	public void testSequence2() throws Exception{
 		runTest('E',"CharacterMain","sequence2");
-		String result1 = byteArrayOutputStream.toString();
+		String result1 = byteArrayOutputStream.toString().replaceAll("\r", "");
 		byteArrayOutputStream = new ByteArrayOutputStream();
 		runTest('e',"CharacterMain","sequence2");
-		String result2 = byteArrayOutputStream.toString();
+		String result2 = byteArrayOutputStream.toString().replaceAll("\r", "");
 		byteArrayOutputStream = new ByteArrayOutputStream();
 		runTest('4',"CharacterMain","sequence2");
-		String result3 = byteArrayOutputStream.toString();
+		String result3 = byteArrayOutputStream.toString().replaceAll("\r", "");
 		byteArrayOutputStream = new ByteArrayOutputStream();
 		runTest('Z',"CharacterMain","sequence2");
-		String result4 = byteArrayOutputStream.toString();
+		String result4 = byteArrayOutputStream.toString().replaceAll("\r", "");
 		
 		assertFalse("Remember to output the second sequence results into the console.",notExpected.equals(result1));
 		
@@ -87,16 +85,16 @@ public class CharacterMainTest {
 	@Test
 	public void testSequence3() throws Exception{
 		runTest('E',"CharacterMain","sequence3");
-		String result1 = byteArrayOutputStream.toString();
+		String result1 = byteArrayOutputStream.toString().replaceAll("\r", "");
 		byteArrayOutputStream = new ByteArrayOutputStream();
 		runTest('e',"CharacterMain","sequence3");
-		String result2 = byteArrayOutputStream.toString();
+		String result2 = byteArrayOutputStream.toString().replaceAll("\r", "");
 		byteArrayOutputStream = new ByteArrayOutputStream();
 		runTest('4',"CharacterMain","sequence3");
-		String result3 = byteArrayOutputStream.toString();
+		String result3 = byteArrayOutputStream.toString().replaceAll("\r", "");
 		byteArrayOutputStream = new ByteArrayOutputStream();
 		runTest('5',"CharacterMain","sequence3");
-		String result4 = byteArrayOutputStream.toString();
+		String result4 = byteArrayOutputStream.toString().replaceAll("\r", "");
 		
 		assertFalse("Remember to output the third sequence results into the console.",notExpected.equals(result1));
 		

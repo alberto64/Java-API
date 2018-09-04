@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class CesarMethod {
     /*
      * This program is will encrypt a text using the Cesar Method.
